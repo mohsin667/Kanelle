@@ -20,11 +20,12 @@ $light-gray     :        #5d5a67;
 $red        		:        #ee3333;
 
 // Media Query Screen Size's
-$medium     :       50em; //800px
-$default    :       64em; //1024px
-$large      :       75em; //1200px
-$xlarge     :       85.5em; //1368px
-$xxlarge    :       90.1em; //1441px
+$small			:				576px;
+$medium     :       768px; 
+$default    :       992px; 
+$large      :       1200px;
+$xlarge     :       1400px;
+$xxlarge    :       1441px; 
 
 // Global Spaces
 $gutter-space						:	2rem;
@@ -42,7 +43,7 @@ $height-icon		: 	1.8rem;
 $width-line			: 	3.2rem;
 $height-line		:	0.4rem;
 $transition-time	:	0.3s;
-$rotation			:	45deg	;
+$rotation				:	45deg	;
 $translateY			: 	($height-icon / 2);
 $translateX			: 	0;
 $transition			:		all $transition-time;
