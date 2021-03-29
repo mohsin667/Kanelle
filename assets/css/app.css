@@ -8374,7 +8374,7 @@ header {
       @media screen and (min-width: 992px) {
         header > .container > .row .col.navigation__menu__list {
           align-items: center;
-          width: auto;
+          width: 41.6666666667%;
           height: auto;
           position: static; } }
   header .col {
