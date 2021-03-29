@@ -7689,9 +7689,33 @@ textarea.form-control-lg {
   src: url("/assets/fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/OpenSans-Bold.woff") format("woff"), url("/assets/fonts/OpenSans-Bold.ttf") format("truetype"), url("/assets/fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
   font-display: swap; }
 
+@font-face {
+  font-family: 'panton-bold';
+  src: url("/assets/fonts/panton-bold-webfont.woff2") format("woff2"), url("/assets/fonts/panton-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'pantonbold_italic';
+  src: url("/assets/fonts/panton-bolditalic-webfont.woff2") format("woff2"), url("/assets/fonts/panton-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'pantonitalic';
+  src: url("/assets/fonts/panton-italic-webfont.woff2") format("woff2"), url("/assets/fonts/panton-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'panton-regular';
+  src: url("/assets/fonts/panton-regular-webfont.woff2") format("woff2"), url("/assets/fonts/panton-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 p {
   margin: 0;
-  font-family: "open-sans-regular", sans-serif;
+  font-family: "panton-regular", sans-serif;
   font-size: 1.3rem;
   line-height: 1.5;
   padding-bottom: 0.5em; }
@@ -7850,7 +7874,7 @@ html {
 body {
   margin: 0;
   margin: 0;
-  font-family: "open-sans-regular", sans-serif;
+  font-family: "panton-regular", sans-serif;
   font-size: 1.3rem;
   line-height: 1.5;
   padding-bottom: 0.5em; }
@@ -8153,7 +8177,7 @@ template {
   appearance: none;
   color: white;
   background-color: black;
-  font-family: "open-sans-regular", sans-serif;
+  font-family: "panton-regular", sans-serif;
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 1;
