@@ -7860,15 +7860,6 @@ body {
   body:last-child {
     padding-bottom: 0; }
 
-* {
-  box-sizing: border-box;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
 /**
    * Render the `main` element consistently in IE.
    */
@@ -8205,21 +8196,6 @@ template {
   .button.auto-width {
     width: auto; }
 
-.section {
-  width: 100%;
-  display: inline-block; }
-  .section .container {
-    margin: 0 auto;
-    max-width: calc(100% - 3rem); }
-    @media screen and (min-width: 50em) {
-      .section .container {
-        max-width: calc(100% - 8rem); } }
-    @media screen and (min-width: 90.1em) {
-      .section .container {
-        max-width: 144rem; } }
-    .section .container .layout {
-      width: 100%; }
-
 .flex {
   display: flex;
   flex-flow: column; }
@@ -8432,3 +8408,12 @@ header {
     .k__mega__menu .mega__menu__image img {
       max-width: 590px;
       border: 1px solid #f4f7f6; }
+
+.breadcrumb-container {
+  padding-top: 65px;
+  display: flex; }
+  .breadcrumb-container__item {
+    cursor: pointer;
+    margin-right: 18px; }
+    .breadcrumb-container__item span {
+      margin-left: 10px; }
