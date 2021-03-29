@@ -8608,6 +8608,49 @@ header {
 header ul.k__navigation > li .navigationd__content__group a {
   color: #000; }
 
+footer {
+  padding: 8rem 0;
+  background: #222222; }
+  footer h4 {
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+  footer p, footer li a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    display: inline-block; }
+  footer li a:hover {
+    color: rgba(255, 255, 255, 0.5); }
+  footer .footer__social__icons ul {
+    display: flex;
+    align-items: center;
+    gap: .8rem; }
+    footer .footer__social__icons ul li a {
+      border-radius: 100%;
+      background: #2e2e2e;
+      width: 3.8rem;
+      height: 3.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  footer .dis {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 2rem; }
+    @media screen and (min-width: 992px) {
+      footer .dis {
+        padding-top: 3rem;
+        margin-top: 8rem; } }
+    footer .dis span {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 1rem; }
+    footer .dis .footer__payoption {
+      display: flex; }
+
 .breadcrumb-container {
   margin: 0 auto;
   padding: 65px 0 60px 0;
