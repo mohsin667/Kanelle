@@ -1,0 +1,36 @@
+.site__product_card {
+  display: flex;
+  max-width: 114.5rem;
+  margin: 0 auto 7rem;
+  .row {
+    padding: 0 1.5rem;
+    @include media($default) {
+      padding: 0;
+    }
+  }
+  .col-sm-3 {
+    padding-bottom: 7rem;
+    position: relative;
+  }
+  .site__product__details {
+    position: absolute;
+    bottom: 0;
+    color: #342f29;
+    p {
+      font-weight: 600;
+      font-size: 1.4rem;
+      padding: 0;
+      &:last-child {
+        font-weight: 400;
+      }
+    }
+    a {
+      font-weight: 600;
+      color: inherit;
+      font-size: 1.4rem;
+    }
+  }
+  .slick-dots {
+    padding-top: 2rem;
+  }
+}

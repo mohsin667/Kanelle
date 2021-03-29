@@ -6,17 +6,22 @@ header {
   width: 100%;
   z-index: 99;
   position: absolute;
+  transition: $transition;
   @include media($default) {
+    height: 12.6rem;
     position: fixed;
   }
   &.transparent {
     background: transparent;
     ul.k__navigation > li .drop__menu {
-      background: rgba(0,0,0,0.6);
+      background: rgba(0,0,0,0.9);
     }
   }
   &.sticky {
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.9);
+    @include media($default) {
+      height: 6.6rem;
+    }
     ul.k__navigation > li {
       padding: 2rem 0;
     }
@@ -350,4 +355,10 @@ header {
 
 header ul.k__navigation > li .navigationd__content__group a {
   color: $black;
+}
+header.sticky ul.k__navigation > li:hover .drop__menu {
+  top: 6.6rem;
+}
+header.sticky .right__menu .k__navigation > li .navigation__right_dorp__menu.visible {
+  top: 6.6rem;
 }
