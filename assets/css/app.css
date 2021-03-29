@@ -7728,7 +7728,7 @@ p {
 h1 {
   margin: 0;
   padding-bottom: 0.5em;
-  font-family: "Noto Serif", serif;
+  font-family: "panton-regular", sans-serif;
   font-size: 3.6rem;
   line-height: 1; }
   h1:last-child {
@@ -7749,7 +7749,7 @@ h1 {
 h2 {
   margin: 0;
   padding-bottom: 0.5em;
-  font-family: "Noto Serif", serif;
+  font-family: "panton-regular", sans-serif;
   font-size: 3.2rem;
   line-height: 1.2; }
   h2:last-child {
@@ -7770,7 +7770,7 @@ h2 {
 h3 {
   margin: 0;
   padding-bottom: 0.5em;
-  font-family: "Noto Serif", serif;
+  font-family: "panton-regular", sans-serif;
   font-size: 2.8rem;
   line-height: 1.2; }
   h3:last-child {
@@ -7791,7 +7791,7 @@ h3 {
 h4 {
   margin: 0;
   padding-bottom: 0.5em;
-  font-family: "Noto Serif", serif;
+  font-family: "panton-regular", sans-serif;
   font-size: 2.4rem;
   line-height: 1.2; }
   h4:last-child {
@@ -7812,7 +7812,7 @@ h4 {
 h5 {
   margin: 0;
   padding-bottom: 0.5em;
-  font-family: "Noto Serif", serif;
+  font-family: "panton-regular", sans-serif;
   font-size: 2.1rem;
   line-height: 1.2;
   padding: 0; }
@@ -7834,7 +7834,7 @@ h5 {
 h6 {
   margin: 0;
   padding-bottom: 0.5em;
-  font-family: "Noto Serif", serif;
+  font-family: "panton-regular", sans-serif;
   font-size: 1.8rem;
   line-height: 1.2; }
   h6:last-child {
@@ -8434,10 +8434,26 @@ header {
       border: 1px solid #f4f7f6; }
 
 .breadcrumb-container {
-  padding-top: 65px;
+  margin: 0 auto;
+  padding: 65px 0 60px 0;
   display: flex; }
   .breadcrumb-container__item {
     cursor: pointer;
-    margin-right: 18px; }
+    margin-right: 1.1rem;
+    font-weight: 600; }
     .breadcrumb-container__item span {
-      margin-left: 10px; }
+      margin-left: .6rem;
+      font-size: 1.3rem; }
+    .breadcrumb-container__item.visited {
+      color: #b85a4d; }
+
+.main-section {
+  margin: 0 auto; }
+  .main-section .section__heading__title {
+    font-size: 3rem;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 30px; }
+  .main-section .section__heading__text {
+    font-size: 1.5rem; }

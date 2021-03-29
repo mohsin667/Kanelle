@@ -50,7 +50,7 @@
 @mixin headings-font-style {
     margin: 0;
     padding-bottom: 0.5em;
-    font-family: $roman;
+    font-family: $regular;
     &:last-child {
         padding-bottom: 0;
     }

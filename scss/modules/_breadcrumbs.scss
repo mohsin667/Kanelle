@@ -1,11 +1,17 @@
 .breadcrumb-container {
-    padding-top: 65px;
+    margin: 0 auto; 
+    padding: 65px 0 60px 0;
     display: flex;
     &__item {
         cursor: pointer;
-        margin-right: 18px;
+        margin-right: 1.1rem;
+        font-weight: 600;
         span {
-            margin-left: 10px;
+            margin-left: .6rem;
+            font-size: 1.3rem;
+        }
+        &.visited {
+            color: #b85a4d;
         }
     }
 }
