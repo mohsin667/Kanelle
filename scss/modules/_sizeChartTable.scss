@@ -2,6 +2,10 @@
     margin: 4.5rem 0 3.5rem;
     &__head {
         background: #fcf7ee;
+        .blank-th {
+            color: #fcf7ee;;
+            user-select: none;
+        }
     }
     tr {
         border-bottom: 1px solid #ccc;
