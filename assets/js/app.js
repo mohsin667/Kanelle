@@ -50,5 +50,13 @@ $(document).ready(function(){
             $(this).find(".drop__menu").slideToggle()
         })
     }
-
+    $(".navigation__right__close").on("click",function(e){
+        e.stopPropagation();
+        $(".navigation__right_dorp__menu").removeClass("visible")
+    })
+    $(".right__menu li").on("click",function(e){
+        e.stopPropagation();
+        $(".navigation__right_dorp__menu").removeClass("visible")
+        $(this).find(".navigation__right_dorp__menu").addClass("visible")
+    })
 });
