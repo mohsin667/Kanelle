@@ -1,0 +1,44 @@
+.site__banner {
+  img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .site__banner__item {
+    position: relative;
+    height: 40rem;
+    @include media($default) {
+      height: auto;
+    }
+    .caption{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      flex-flow: column;
+      padding: 0 3rem;
+      text-align: center;
+      background: rgba(0,0,0,0.5);
+      h1 {
+        padding-bottom: 0;
+        font-family: $bold;
+      }
+      p {
+        font-size: 2rem;
+        font-family: $regular;
+      }
+    }
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 2rem;
+    @include media($default) {
+      bottom: 4rem;
+    }
+  }
+}

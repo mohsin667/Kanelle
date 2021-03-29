@@ -1,0 +1,36 @@
+.site__quick__pick {
+  display: flex;
+  padding: 2rem 1rem; 
+  flex-flow: wrap;
+  .quick__item {
+    width: 100%;
+    padding: 0 1rem 2rem;
+    position: relative;
+    @include media($default) {
+      width: calc(100% / 3);
+    }
+    .caption {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      p {
+        max-width: 30rem;
+        text-align: center;
+        font-size: 1.4rem;
+      }
+      h2 {
+        padding-bottom: 0;
+      }
+      h4 {
+        font-size: 2rem;
+      }
+    }
+  }
+}

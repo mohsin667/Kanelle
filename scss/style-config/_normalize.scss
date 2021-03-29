@@ -363,3 +363,27 @@
 	display: none;
   }
   
+
+
+  .slick-dots {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      color: transparent;
+      border: none;
+      outline: none;
+      margin: 0 .5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 100%;
+      background: #999794;
+
+    }
+  }
+  .slick-active {
+    button {
+      background: #342f29;
+    }
+  }
