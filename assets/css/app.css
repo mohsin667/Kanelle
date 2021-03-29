@@ -8553,12 +8553,22 @@ header {
       color: #b85a4d; }
 
 .main-section {
-  margin: 0 auto; }
+  margin: 0 auto 2rem; }
   .main-section .section__heading__title {
     font-size: 3rem;
     font-weight: 600;
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
     margin-bottom: 30px; }
-  .main-section .section__heading__text {
+  .main-section .section__heading .section__heading__content__title {
+    color: #b85a4d;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 2.3rem; }
+  .main-section .section__heading .section__heading__content__text {
     font-size: 1.5rem; }
+
+.grid__container {
+  margin: 0 auto; }
+  .grid__container .simple__grid {
+    flex-flow: wrap; }
