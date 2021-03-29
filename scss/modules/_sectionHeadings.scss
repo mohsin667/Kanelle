@@ -11,12 +11,15 @@
         .section__heading__content {
             &__title {
                 color: #b85a4d;
-                font-size: 1.7rem;
+                font-size: 2rem;
                 font-weight: bold;
                 margin-top: 2.3rem;
             }
             &__text {
-                font-size: 1.5rem;
+                font-size: 1.8rem;
+            }
+            &__text-L {
+                font-size: 2rem;
             }
         }
     }

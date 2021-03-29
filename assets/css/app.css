@@ -8632,13 +8632,28 @@ header ul.k__navigation > li .navigationd__content__group a {
     margin-bottom: 30px; }
   .main-section .section__heading .section__heading__content__title {
     color: #b85a4d;
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-top: 2.3rem; }
   .main-section .section__heading .section__heading__content__text {
-    font-size: 1.5rem; }
+    font-size: 1.8rem; }
+  .main-section .section__heading .section__heading__content__text-L {
+    font-size: 2rem; }
 
 .grid__container {
   margin: 0 auto; }
   .grid__container .simple__grid {
     flex-flow: wrap; }
+
+.size-chart-table {
+  margin: 4.5rem 0 3.5rem; }
+  .size-chart-table__head {
+    background: #fcf7ee; }
+  .size-chart-table tr {
+    border-bottom: 1px solid #ccc; }
+    .size-chart-table tr th {
+      padding: 1rem 0;
+      font-size: 1.6rem; }
+    .size-chart-table tr td {
+      padding: 1rem 0;
+      font-size: 1.4rem; }
