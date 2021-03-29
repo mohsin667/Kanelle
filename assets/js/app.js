@@ -35,5 +35,20 @@ $(document).ready(function(){
 
     //Functions initialization
     // slickSlider.init();
+    $(".trigger").on("click",function(){
+        $(".left__menu").addClass("show");
+        $("body").css("overflow-y","hidden")
+    })
+
+    $(".close").on("click",function(){
+        $(".left__menu").removeClass("show");
+        $("body").css("overflow-y","visible")
+    })
+
+    if($(window).width() < 992) {
+        $(".left__menu li").on("click",function(){
+            $(this).find(".drop__menu").slideToggle()
+        })
+    }
 
 });

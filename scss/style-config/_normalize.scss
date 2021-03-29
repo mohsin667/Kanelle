@@ -23,7 +23,9 @@
   
   body {
   margin: 0;
-	@include base-font-style;
+  max-width: 100%;
+  overflow-x: hidden;
+  @include base-font-style;
   }
 
   // * {
