@@ -1,0 +1,60 @@
+footer {
+  padding: 8rem 0;
+  background: $gray;
+  h4 {
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+  p,li a {
+    color: rgba(255,255,255,0.5);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+  }
+  
+  li {
+    a {
+      &:hover {
+        color: rgba(255,255,255,0.5);
+      }
+    }
+  }
+  .footer__social__icons {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+      li {
+        a {
+          border-radius: 100%;
+          background: $light-gray;
+          width: 3.8rem;
+          height: 3.8rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .dis {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255,255,255,0.5);;
+    padding-top: 2rem;
+    @include media($default) {
+      padding-top: 3rem;
+      margin-top: 8rem;
+    }
+    span {
+      color: rgba(255,255,255,0.5);
+      font-size: 1rem;
+    }
+    .footer__payoption {
+      display: flex;
+    }
+  }
+}
