@@ -1,0 +1,168 @@
+.pr-layout__options {
+    &__title {
+        font-size: 2.2rem;
+    }
+    &__filters {
+        .filters__filter-vr {
+            border: 1px solid #cccccc;;
+            .filter-vr__title {
+                font-size: 1.6rem;
+                background-color: #fcf7ee;
+                padding: 15px 0 15px 20px;
+                border-bottom: 1px solid #cccccc;;
+                border-bottom: 1px solid #cccccc;;
+            }
+            .filter-vr__colors {
+                display: flex;
+                flex-flow: row wrap;
+                padding: 35px;
+                li {
+                    flex: 0 0 16.6%;
+                    cursor: pointer;
+                    i {
+                        width: 4rem;
+                        height: 2.5rem;
+                        display: block;
+                        margin: 1px;
+                        &:hover {
+                            border: 2px solid black;
+                        }
+                    }
+                    &:nth-child(1){
+                        i {
+                            background-color: #043114;
+                        }
+                    }
+                    &:nth-child(2){
+                        i {
+                            background-color: #f5700f;
+                        }
+                    }
+                    &:nth-child(3){
+                        i {
+                            background-color: #f73554;
+                        }
+                    }
+                    &:nth-child(4){
+                        i {
+                            background-color: #e2bc26;
+                        }
+                    }
+                    &:nth-child(5){
+                        i {
+                            background-color: #6cabc9;
+                        }
+                    }
+                    &:nth-child(6){
+                        i {
+                            background-color: #5a3a00;
+                        }
+                    }
+                    &:nth-child(7){
+                        i {
+                            background-color: #48d8ed;
+                        }
+                    }
+                    &:nth-child(8){
+                        i {
+                            background-color: #6df28c;
+                        }
+                    }
+                    &:nth-child(9){
+                        i {
+                            background-color: #f13bf3;
+                        }
+                    }
+                    &:nth-child(10){
+                        i {
+                            background-color: #f33b9f;
+                        }
+                    }
+                    &:nth-child(11){
+                        i {
+                            background-color: #963bf3;
+                        }
+                    }
+                    &:nth-child(12){
+                        i {
+                            background-color: #f3ac3b;
+                        }
+                    }
+                    &:nth-child(13){
+                        i {
+                            background-color: #4e731e;
+                        }
+                    }
+                    &:nth-child(14){
+                        i {
+                            background-color: #1e736a;
+                        }
+                    }
+                    &:nth-child(15){
+                        i {
+                            background-color: #3bdbf2;
+                        }
+                    }
+                    &:nth-child(16){
+                        i {
+                            background-color: #e2bc26;
+                        }
+                    }
+                    &:nth-child(17){
+                        i {
+                            background-color: #5ef33b;
+                        }
+                    }
+                    &:nth-child(18){
+                        i {
+                            background-color: #ff3c00;
+                        }
+                    }
+                }
+            }
+            .filter-vr__types {
+                padding: 17px;
+            }
+        }
+    }
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.check-input {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.checkbox {
+    margin-right: 8px;
+}
+.check-input input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.check-input input:checked ~ .checkmark:after {
+    display: block;
+}
+.check-input .checkmark:after {
+    left: 5px;
+    top: 3px;
+    width: 2px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

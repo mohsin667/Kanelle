@@ -1,0 +1,104 @@
+.pr-layout__products {
+    padding-left: 15px;
+    &__toolbars {
+        padding: 30px 0 30px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        margin: 20px 0;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        .toolbars__modes {
+            display: flex;
+            align-items: center;
+            .modes__list {
+                cursor: pointer;
+                &:hover {
+                    opacity: .7;
+                }
+                &.modes__list-style-1 {
+                    margin-right: 25px;
+                    img {
+                        max-width: 20px;
+                    }
+                }
+                &.modes__list-style-2 {
+                    img {
+                        max-height: 20px;
+    
+                        max-width: 25px;
+                    }
+                }
+            }
+            .products-amount {
+                margin-left: 30px;
+                &__number {
+                    margin-right: 3px;
+                }
+            }
+        }
+        .toolbars__sorter {
+            display: flex;
+            align-items: center;
+            p {
+                padding: 0;
+            }
+            .form-select {
+                width: 185px;
+                height: 45px;
+                font-size: 1.6rem;
+                padding-left: 1.5rem;
+                margin-left: 2.5rem;
+            }
+        }
+    }
+    &__items {
+        // margin-left: -10px;
+        // margin-right: -10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .items__product-item {
+            // padding-left: 10px;
+            // padding-right: 10px;
+            flex: 0 0 32%;
+            margin-bottom: 2.3rem;
+            .product-item__name {
+                a {
+                    font-size: 1.6rem;
+                    color: #000;
+                    display: inline-block;
+                    margin: 1rem 0;
+                }
+            }
+            .product-item__pricing {
+                display: flex;
+                flex-flow: row;
+                font-size: 1.8rem;
+                .pricing__final-price {
+                    font-size: 1.8rem;
+                    margin-right: 2.2rem;
+                }
+                .pricing__stroke-price {
+                    font-size: 1.8rem;
+                    text-decoration: line-through;
+                    margin-right: 2.2rem;
+                    color: #a04b3f;
+                }
+            }
+            .product-item__inner-tools {
+                .ctc-btn {
+                    display: inline-block;
+                    padding: 0.5rem 1.1em;
+                    border: 1px solid #333;
+                    color: #000;
+                    font-size: 1.6rem;
+                    &:hover {
+                        background-color: #000;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

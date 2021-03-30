@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/app.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Kanelle - Home Page</title>
+    <title>Kanelle - Wholesale</title>
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="row">
-                <div class="col col-lg-5">
+                <div class="trigger">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="col navigation__menu__list col-lg-5">
                     <div class="left__menu">
+                        <div class="close">
+                            <i class="fa fa-times"></i>
+                        </div>
                         <ul class="k__navigation">
                             <li class="active"><a href="#">shop</a>
                                 <div class="k__mega__menu drop__menu">
@@ -104,9 +110,47 @@
                 <div class="col col-lg-5">
                     <div class="right__menu">
                         <ul class="k__navigation">
-                            <li class="search"><a href="#" ><i class="fa fa-search"></i></a></li>
-                            <li class="bag"><a href="#" ><img src="./assets/img/icons/bag.png" alt=""><span>0</span></a></li>
-                            <li class="grid"><a href="#" ><img src="./assets/img/icons/grid.png" alt=""></a></li>
+                            <li class="search"><a href="#" ><i class="fa fa-search"></i></a>
+                                <div class="navigation__right_dorp__menu">
+                                    <div class="navigationd__content__group">
+                                        <div class="navigation__right__close"><i class="fa fa-times"></i></div>
+                                        <input type="text" class="form-control" placeholder="Search for items"/>
+                                        <div class="navigation__icon">
+                                            <i class="fa fa-search"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="bag"><a href="#" ><img src="./assets/img/icons/bag.png" alt=""><span>0</span></a>
+                                <div class="navigation__right_dorp__menu">
+                                    <div class="navigationd__content__group">
+                                        <div class="navigation__right__close"><i class="fa fa-times"></i></div>
+                                        <p>You have no items in your shopping cart</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="grid"><a href="#" ><img src="./assets/img/icons/grid.png" alt=""></a>
+                                <div class="navigation__right_dorp__menu">
+                                    <div class="navigationd__content__group">
+                                        <div class="navigation__right__close"><i class="fa fa-times"></i></div>
+                                            <h3>MY ACCOUNT</h3>
+                                                <ul>
+                                                    <li><a href="#">My Account</a></li>
+                                                    <li><a href="#">My Wish List</a></li>
+                                                    <li><a href="#">Sign In</a></li>
+                                                </ul>
+                                            <h3>CURRENCY</h3>
+                                            <ul>
+                                                <li><a href="#">Indian Rupee</a></li>
+                                                <li><a href="#">Australian Dollar</a></li>
+                                                <li><a href="#">Canadian Dollar</a></li>
+                                                <li><a href="#">Euro</a></li>
+                                                <li><a href="#">US Dollar</a></li>
+                                                <li><a href="#">United Arab Emirates Dirham</a></li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -117,22 +161,21 @@
         <div class="container">
             <ul class="breadcrumb-container col col-lg-8">
                 <li class="breadcrumb-container__item">Home<span>></span></li>
-                <li class="breadcrumb-container__item">About <span>></span></li>
-                <li class="breadcrumb-container__item visited">Our Process</li>
+                <li class="breadcrumb-container__item visited"> Wholesale</li>
             </ul>
             <div class="main-section col col-lg-8">
                 <div class="section__heading">
                     <h1 class="section__heading__title">
-                        Our Process
+                          Wholesale
                     </h1>
-                    <p class="section__heading__text">
-                        Over the years, Kanelle has been collaborating with craftspeople such as weavers, print makers, dyers & embroiders to produce unique and original pieces that are beautifully handmade.Our products are carefully designed and crafted with age old techniques such as block printing, hand embroidery and textile weaving. Some of the visual content is to bring to you the transparency in our processes and show you how our inspiration is derived.
-                    </p>
-                    <p class="section__heading__text">
-                        Kanelle is on a journey to create a more thoughtful way of being in this world. We believe that everyone should be treated with fairness and 
-thoughtfulness. We have longstanding relationships with many of our makers and the social conscience team at Kanelle works closely with our 
-suppliers to ensure that they follow our ethical policies. 
-                    </p>
+                    <div class="section__heading__content">
+                        <p class="section__heading__content__text-L">
+                            Interested in bulk/wholesale orders?
+                        </p>
+                        <p class="section__heading__content__text-L">
+                            If you are looking to make a bulk purchase of our products, pls contact us at k.jain@kanelle-online.com
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -224,5 +267,6 @@ suppliers to ensure that they follow our ethical policies.
     <script src="assets/js/vendor/jquery-3.5.1.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
     <script src="assets/js/app.js"></script>
+
 </body>
 </html>
