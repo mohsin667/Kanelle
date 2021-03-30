@@ -15,7 +15,19 @@
             .filter-vr__colors {
                 display: flex;
                 flex-flow: row wrap;
-                padding: 35px;
+                padding: 32px;
+                @include media($medium){
+                    padding: 20px;
+                }
+                @include media($default){
+                    padding: 42px;
+                }
+                @include media($large){
+                    padding: 62px;
+                }
+                @include media($xlarge){
+                    padding: 20px;
+                }
                 li {
                     flex: 0 0 16.6%;
                     cursor: pointer;
@@ -135,14 +147,18 @@
     width: 15px;
     border: 1px solid black;
     border-radius: 5px;
+    opacity: 0;
 }
 .check-input {
     display: flex;
     align-items: center;
     font-size: 1.4rem;
+    position: relative;
 }
 .checkbox {
     margin-right: 8px;
+    height: 15px;
+    width: 15px;
 }
 .check-input input:checked ~ .checkmark {
     background-color: #2196F3;

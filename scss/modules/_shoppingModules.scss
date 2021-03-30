@@ -1,1 +1,8 @@
 @import './shopOptions';
+
+.pr-layout {
+    flex-flow: column-reverse;
+    @include media($medium){
+     flex-flow: row;
+    }   
+}
