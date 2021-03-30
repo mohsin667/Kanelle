@@ -28,6 +28,12 @@
   @include base-font-style;
   }
 
+  p, li {
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
   // * {
   //   box-sizing: border-box;
   //   -webkit-touch-callout: none; 

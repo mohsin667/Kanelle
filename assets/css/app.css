@@ -7961,6 +7961,11 @@ body {
   body:last-child {
     padding-bottom: 0; }
 
+p, li {
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
 /**
    * Render the `main` element consistently in IE.
    */
