@@ -1,0 +1,46 @@
+.contact__details {
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 1rem;
+  @include media($default) {
+    justify-content: space-between;
+  }
+  .contact__half_column {
+    margin-bottom: 4rem;
+    width: 100%;
+    @include media($default) {
+      width: calc(50% - 6rem);
+    }
+    h3 {
+      margin-top: 0;
+    }
+    &:last-child {
+      position: relative;
+      &:before {
+        @include media($default) {
+          @include content;
+          height: 100%;
+          width: 1px;
+          background: #cccccc;
+          left: -6rem;
+        }
+      }
+    }
+  }
+  button {
+    margin-top: 2rem;
+    background: rgb(160, 75, 63);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 1.5rem 5rem;
+    font-size: 1.8rem;
+    outline: none;
+    border: none;
+  }
+  input.cap {
+    user-select: none;
+    background: #fff;
+    text-align: center;
+    max-width: 16.3rem;
+  }
+}

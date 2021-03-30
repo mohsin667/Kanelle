@@ -182,6 +182,21 @@
 	line-height: 1.15; /* 1 */
 	margin: 0; /* 2 */
   }
+  input[type=text],input[type=email],input[type=password],textarea {
+    min-height: 3.8rem;
+    font-size: 1.4rem;
+    border-radius: 0;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+    span {
+      color: #b85a4d;
+    }
+  }
+  textarea.form-control {
+    font-size: 1.4rem;
+    max-height: 13.2rem;
+  }
   
   /**
    * Show the overflow in IE.
