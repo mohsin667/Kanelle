@@ -8490,10 +8490,11 @@ header {
       height: 12.6rem;
       position: fixed; } }
   header.transparent {
-    background: #000; }
+    background: transparent;
+    position: absolute; }
     @media screen and (min-width: 992px) {
       header.transparent {
-        background: transparent; } }
+        position: fixed; } }
     header.transparent ul.k__navigation > li .drop__menu {
       background: rgba(0, 0, 0, 0.9); }
   header.sticky {
@@ -8576,6 +8577,9 @@ header {
         header ul.k__navigation > li .drop__menu .container {
           max-width: 100%;
           padding: 0 4%; }
+          @media screen and (min-width: 992px) {
+            header ul.k__navigation > li .drop__menu .container {
+              padding-left: 0; } }
         @media screen and (min-width: 992px) {
           header ul.k__navigation > li .drop__menu {
             border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -8586,8 +8590,7 @@ header {
         header ul.k__navigation > li .drop__menu .col {
           display: flex;
           justify-content: space-between;
-          align-items: flex-start;
-          padding: 0; }
+          align-items: flex-start; }
         header ul.k__navigation > li .drop__menu a {
           margin-bottom: 1.5rem; }
       @media screen and (min-width: 992px) {
@@ -8604,7 +8607,7 @@ header {
           width: 100%;
           background-color: #fff;
           top: auto;
-          bottom: -.3rem;
+          bottom: -0.3rem;
           height: 2px; } }
       header ul.k__navigation > li a {
         position: relative;
@@ -8704,6 +8707,9 @@ header {
       margin-right: 2rem; }
       header .right__menu li.grid {
         margin-top: 2px; }
+        @media screen and (min-width: 992px) {
+          header .right__menu li.grid {
+            margin-right: 0; } }
       header .right__menu li.search a {
         font-size: 1.8rem; }
       header .right__menu li.bag span {
@@ -8737,7 +8743,7 @@ header {
   z-index: 999; }
   .close i {
     font-size: 1.6rem;
-    margin-bottom: .1rem; }
+    margin-bottom: 0.1rem; }
   @media screen and (min-width: 992px) {
     .close {
       display: none; } }
@@ -8760,7 +8766,7 @@ header {
     .navigation__right_dorp__menu .navigationd__content__group ul {
       padding: 1rem; }
       .navigation__right_dorp__menu .navigationd__content__group ul a {
-        margin-bottom: .5rem; }
+        margin-bottom: 0.5rem; }
   .navigation__right_dorp__menu .navigation__icon {
     position: absolute;
     right: 1rem;
