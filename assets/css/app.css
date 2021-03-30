@@ -8273,7 +8273,8 @@ template {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 100%;
-    background: #999794; }
+    background: #999794;
+    font-size: 0; }
 
 .slick-active button {
   background: #342f29; }
@@ -8484,7 +8485,10 @@ header {
       height: 12.6rem;
       position: fixed; } }
   header.transparent {
-    background: transparent; }
+    background: #000; }
+    @media screen and (min-width: 992px) {
+      header.transparent {
+        background: transparent; } }
     header.transparent ul.k__navigation > li .drop__menu {
       background: rgba(0, 0, 0, 0.9); }
   header.sticky {
@@ -8781,8 +8785,7 @@ footer {
     color: rgba(255, 255, 255, 0.5); }
   footer .footer__social__icons ul {
     display: flex;
-    align-items: center;
-    gap: .8rem; }
+    align-items: center; }
     footer .footer__social__icons ul li a {
       border-radius: 100%;
       background: #2e2e2e;
@@ -8790,7 +8793,8 @@ footer {
       height: 3.8rem;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      margin-right: .8rem; }
   footer .dis {
     display: flex;
     justify-content: space-between;

@@ -10,7 +10,11 @@ header {
     position: fixed;
   }
   &.transparent {
-    background: transparent;
+    // background: transparent;
+    background: #000;
+    @include media($default){
+      background: transparent;
+    }
     ul.k__navigation > li .drop__menu {
       background: rgba(0,0,0,0.9);
     }
