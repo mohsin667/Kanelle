@@ -8515,7 +8515,9 @@ header {
       header > .container > .row .trigger {
         position: absolute;
         top: 3.2rem;
-        z-index: 99; }
+        z-index: 99;
+        width: auto;
+        display: inline-block; }
         @media screen and (min-width: 992px) {
           header > .container > .row .trigger {
             display: none; } }
@@ -8648,7 +8650,9 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 2.5rem; }
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 99; }
     @media screen and (min-width: 992px) {
       header .right__menu {
         margin-bottom: 0;

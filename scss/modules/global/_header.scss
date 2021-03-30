@@ -48,6 +48,8 @@ header {
         position: absolute;
         top: 3.2rem;
         z-index: 99;
+        width: auto;
+        display: inline-block;
         @include media($default) {
           display: none;
         }
@@ -216,6 +218,8 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 99;
     @include media($default) {
       margin-bottom: 0;
       justify-content: flex-end;
