@@ -101,6 +101,17 @@
         }
       }
     }
+    .seller__product {
+      position: relative;
+      &__tag {
+        img {
+          position: absolute;
+          max-width: 26px;
+          top: 0;
+          right: 10px;
+        }
+      }
+    }
     &>a {
       width: calc(100% / 3 - 1.5rem);
       margin: 0 1.5rem;

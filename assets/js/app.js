@@ -133,5 +133,12 @@ $(document).ready(function(){
     if($(window).width() < 992) {
         slickSlider.slick(slickSlider.sellerProduct,1,1,false,false,null,true,null,null,true);
     }
-    
+
+    // Product page -- List/Grid View Toggle
+    $(".modes__list-style-1").on('click', function(){
+        $(".items__product-item").removeClass("list-view")
+    });
+    $(".modes__list-style-2").on('click', function(){
+        $(".items__product-item").addClass("list-view")
+    });
 });
