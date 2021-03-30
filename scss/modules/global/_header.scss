@@ -10,7 +10,11 @@ header {
     position: fixed;
   }
   &.transparent {
-    background: transparent;
+    // background: transparent;
+    background: #000;
+    @include media($default){
+      background: transparent;
+    }
     ul.k__navigation > li .drop__menu {
       background: rgba(0,0,0,0.9);
     }
@@ -44,6 +48,8 @@ header {
         position: absolute;
         top: 3.2rem;
         z-index: 99;
+        width: auto;
+        display: inline-block;
         @include media($default) {
           display: none;
         }
@@ -212,6 +218,8 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 99;
     @include media($default) {
       margin-bottom: 0;
       justify-content: flex-end;

@@ -28,6 +28,12 @@
   @include base-font-style;
   }
 
+  p, li {
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
   // * {
   //   box-sizing: border-box;
   //   -webkit-touch-callout: none; 
@@ -394,6 +400,7 @@
       height: 1.5rem;
       border-radius: 100%;
       background: #999794;
+      font-size: 0;
 
     }
   }

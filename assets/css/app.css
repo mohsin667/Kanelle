@@ -7961,6 +7961,11 @@ body {
   body:last-child {
     padding-bottom: 0; }
 
+p, li {
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
 /**
    * Render the `main` element consistently in IE.
    */
@@ -8273,7 +8278,8 @@ template {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 100%;
-    background: #999794; }
+    background: #999794;
+    font-size: 0; }
 
 .slick-active button {
   background: #342f29; }
@@ -8484,7 +8490,10 @@ header {
       height: 12.6rem;
       position: fixed; } }
   header.transparent {
-    background: transparent; }
+    background: #000; }
+    @media screen and (min-width: 992px) {
+      header.transparent {
+        background: transparent; } }
     header.transparent ul.k__navigation > li .drop__menu {
       background: rgba(0, 0, 0, 0.9); }
   header.sticky {
@@ -8511,7 +8520,9 @@ header {
       header > .container > .row .trigger {
         position: absolute;
         top: 3.2rem;
-        z-index: 99; }
+        z-index: 99;
+        width: auto;
+        display: inline-block; }
         @media screen and (min-width: 992px) {
           header > .container > .row .trigger {
             display: none; } }
@@ -8644,7 +8655,9 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 2.5rem; }
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 99; }
     @media screen and (min-width: 992px) {
       header .right__menu {
         margin-bottom: 0;
@@ -8781,8 +8794,7 @@ footer {
     color: rgba(255, 255, 255, 0.5); }
   footer .footer__social__icons ul {
     display: flex;
-    align-items: center;
-    gap: .8rem; }
+    align-items: center; }
     footer .footer__social__icons ul li a {
       border-radius: 100%;
       background: #2e2e2e;
@@ -8790,7 +8802,8 @@ footer {
       height: 3.8rem;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      margin-right: .8rem; }
   footer .dis {
     display: flex;
     justify-content: space-between;
@@ -9149,6 +9162,8 @@ footer {
     padding: 15px 0 15px 20px;
     border-bottom: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc; }
+  .pr-layout__options__filters .filters__filter-vr li {
+    list-style: none; }
   .pr-layout__options__filters .filters__filter-vr .filter-vr__colors {
     display: flex;
     flex-flow: row wrap;
@@ -9274,8 +9289,7 @@ footer {
       .pr-layout__products__slider {
         display: block; } }
   .pr-layout__products__toolbars {
-    padding: 30px 0 30px;
-    border-top: 1px solid #ccc;
+    padding: 0px 0 30px;
     border-bottom: 1px solid #ccc;
     margin: 20px 0;
     text-align: center;
@@ -9285,6 +9299,8 @@ footer {
     align-items: center; }
     @media screen and (min-width: 768px) {
       .pr-layout__products__toolbars {
+        padding: 30px 0 30px;
+        border-top: 1px solid #ccc;
         flex-flow: row; } }
     .pr-layout__products__toolbars .toolbars__modes {
       display: flex;
@@ -9294,9 +9310,10 @@ footer {
         .pr-layout__products__toolbars .toolbars__modes {
           margin-bottom: 0; } }
       .pr-layout__products__toolbars .toolbars__modes .modes__list {
-        cursor: pointer; }
-        .pr-layout__products__toolbars .toolbars__modes .modes__list:hover {
-          opacity: .7; }
+        cursor: pointer;
+        opacity: .5; }
+        .pr-layout__products__toolbars .toolbars__modes .modes__list.active {
+          opacity: 1; }
         .pr-layout__products__toolbars .toolbars__modes .modes__list.modes__list-style-1 {
           margin-right: 25px; }
           .pr-layout__products__toolbars .toolbars__modes .modes__list.modes__list-style-1 img {
