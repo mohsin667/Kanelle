@@ -8323,6 +8323,18 @@ template {
   z-index: 9;
   margin-bottom: 7rem; }
 
+@media screen and (min-width: 992px) {
+  header + .main__wrapper {
+    margin-top: 12.6rem; } }
+
+@media screen and (min-width: 992px) {
+  header.sticky + .main__wrapper {
+    margin-top: 6.6rem; } }
+
+@media screen and (min-width: 992px) {
+  header.transparent + .main__wrapper {
+    margin-top: 0rem; } }
+
 .flex {
   display: flex;
   flex-flow: column; }
@@ -9059,3 +9071,5 @@ footer {
         @media screen and (min-width: 992px) {
           .site__offers .col-sm-6 .layer h3 {
             font-size: 4rem; } }
+        .site__offers .col-sm-6 .layer h3 a {
+          color: #fff; }

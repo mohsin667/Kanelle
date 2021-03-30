@@ -1,48 +1,4 @@
 $(document).ready(function(){
-
-    let slickSlider = {
-        productCarousel: $('.site__banner'),
-        productCard: $('.site__product_card.sl .row'),
-        sellerProduct: $(".seller__product"),
-        featuredProduct: $(".featured__product"),
-
-        slick: function(el, slidesToShow, slidesToScroll, arrows, fade, asNavFor, dots, centerMode, focusOnSelect, infinite){
-            
-            el.slick({
-                slidesToShow: slidesToShow,
-                slidesToScroll: slidesToScroll,
-                arrows: arrows,
-                fade: fade,
-                asNavFor: asNavFor,
-                dots: dots,
-                centerMode: centerMode,
-                focusOnSelect: focusOnSelect,
-                infinite: infinite
-            });
-
-        },
-        init: function(){
-            if($('.site__banner').length > 0) {
-                slickSlider.slick(slickSlider.productCarousel,1,1,false,false,null,true,null,null,true);
-            }
-            let slideW = 1;
-            let slidev = 2;
-            if ($(window).width() > 992) {
-                slideW = 3
-                slidev = 1
-            }
-            if($(window).width() < 992) {
-                slickSlider.slick(slickSlider.productCard,1,1,false,false,null,true,null,null,true);
-            }
-            slickSlider.slick(slickSlider.featuredProduct,slideW,1,false,false,null,true,null,null,true);
-        }
-    }
-
-    // Functions initialization
-    slickSlider.init();
-    if($(window).width() < 992) {
-        slickSlider.slick(slickSlider.sellerProduct,1,1,false,false,null,true,null,null,true);
-    }
     $(".trigger").on("click",function(){
         $(".left__menu").addClass("show");
         $("body").css("overflow-y","hidden")
@@ -79,8 +35,56 @@ $(document).ready(function(){
             }
         }
     })
-    if($("header.transparent").length < 1) {
-        let headerHeight = $("header").height();
-        $(".main__wrapper").css("margin-top",headerHeight+"px");
-    } 
+    // if($("header.transparent").length < 1) {
+    //     let headerHeight = $("header").height();
+    //     $(".main__wrapper").css("margin-top",headerHeight+"px");
+    // } 
+
+    let slickSlider = {
+        productCarousel: $('.site__banner'),
+        productCard: $('.site__product_card.sl .row'),
+        sellerProduct: $(".seller__product"),
+        featuredProduct: $(".featured__product"),
+
+        slick: function(el, slidesToShow, slidesToScroll, arrows, fade, asNavFor, dots, centerMode, focusOnSelect, infinite){
+            
+            el.slick({
+                slidesToShow: slidesToShow,
+                slidesToScroll: slidesToScroll,
+                arrows: arrows,
+                fade: fade,
+                asNavFor: asNavFor,
+                dots: dots,
+                centerMode: centerMode,
+                focusOnSelect: focusOnSelect,
+                infinite: infinite
+            });
+
+        },
+        init: function(){
+            if($('.site__banner').length > 0) {
+                slickSlider.slick(slickSlider.productCarousel,1,1,false,false,null,true,null,null,true);
+            }
+            let slideW = 1;
+            let slidev = 2;
+            if ($(window).width() > 992) {
+                slideW = 3
+                slidev = 1
+            }
+            if($(window).width() < 992 && $('.site__product_card.sl .row').length > 0) {
+
+                slickSlider.slick(slickSlider.productCard,1,1,false,false,null,true,null,null,true);
+            }
+            if($(".featured__product").length > 0) {
+                slickSlider.slick(slickSlider.featuredProduct,slideW,1,false,false,null,true,null,null,true);
+            }
+        }
+    }
+
+    // Functions initialization
+    slickSlider.init();
+    if($(window).width() < 992) {
+        slickSlider.slick(slickSlider.sellerProduct,1,1,false,false,null,true,null,null,true);
+    }
+    
 });

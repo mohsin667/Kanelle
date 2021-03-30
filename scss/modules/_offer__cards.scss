@@ -23,6 +23,9 @@
         @include media($default) {
           font-size: 4rem;
         }
+        a {
+          color: #fff;
+        }
       }
     }
   }

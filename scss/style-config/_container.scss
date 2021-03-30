@@ -3,3 +3,19 @@
     z-index: 9;
     margin-bottom: 7rem;
 }
+
+header+.main__wrapper {
+    @include media($default) {
+        margin-top: 12.6rem;
+    }
+}
+header.sticky+.main__wrapper {
+    @include media($default) {
+        margin-top: 6.6rem;
+    }
+}
+header.transparent + .main__wrapper {
+    @include media($default) {
+        margin-top: 0rem;
+    }
+}
