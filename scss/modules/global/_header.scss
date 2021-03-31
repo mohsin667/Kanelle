@@ -10,33 +10,32 @@ header {
     position: fixed;
   }
   &.transparent {
-    // background: transparent;
-    background: #000;
-    @include media($default){
-      background: transparent;
+    background: transparent;
+    position: absolute;
+    @include media($default) {
+      position: fixed;
     }
     ul.k__navigation > li .drop__menu {
-      background: rgba(0,0,0,0.9);
+      background: rgba(0, 0, 0, 0.9);
     }
   }
   &.sticky {
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
     @include media($default) {
       height: 6.6rem;
     }
     ul.k__navigation > li {
       padding: 2rem 0;
     }
-
   }
 
-  &>.container {
+  & > .container {
     max-width: 100%;
     padding: 0 1.5rem;
     @include media($default) {
       padding: 0 4%;
     }
-    &>.row {
+    & > .row {
       display: flex;
       flex-flow: column;
       position: relative;
@@ -63,9 +62,9 @@ header {
           position: absolute;
           width: 100%;
           align-items: flex-start;
-          @include media($default){
+          @include media($default) {
             align-items: center;
-            width:41.6666666667%;
+            width: 41.6666666667%;
             height: auto;
             position: static;
           }
@@ -93,7 +92,7 @@ header {
     display: flex;
     margin: 0;
     padding: 0;
-    &>li {
+    & > li {
       margin: 0 1.5rem;
       transition: $transition;
       @include media($default) {
@@ -101,7 +100,7 @@ header {
         margin-left: 0;
         padding: 5rem 0;
       }
-      
+
       .drop__menu {
         position: absolute;
         width: 100%;
@@ -113,9 +112,12 @@ header {
         .container {
           max-width: 100%;
           padding: 0 4%;
+          @include media($default) {
+            padding-left: 0;
+          }
         }
         @include media($default) {
-          border-top: 1px solid rgba(255,255,255,0.3);
+          border-top: 1px solid rgba(255, 255, 255, 0.3);
           transition: $transition;
           opacity: 0;
           visibility: hidden;
@@ -125,7 +127,6 @@ header {
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
-          padding: 0;
         }
         a {
           margin-bottom: 1.5rem;
@@ -141,13 +142,13 @@ header {
         }
       }
       &.active {
-        &>a {
+        & > a {
           @include media($default) {
             &:after {
               @include content;
               background-color: #fff;
               top: auto;
-              bottom: -.3rem;
+              bottom: -0.3rem;
               height: 2px;
             }
           }
@@ -176,7 +177,7 @@ header {
     height: 100vh;
     background: #000;
     z-index: 999;
-    &.show{
+    &.show {
       left: -1.5rem;
       .k__navigation {
         padding: 2rem;
@@ -185,7 +186,7 @@ header {
         position: relative;
         overflow: auto;
         max-height: 100vh;
-        
+
         li {
           margin-bottom: 2rem;
           a {
@@ -199,7 +200,7 @@ header {
           }
           .drop__menu {
             position: static;
-            padding: 1rem 0 ;
+            padding: 1rem 0;
             .container .row .col {
               flex-flow: column;
             }
@@ -224,8 +225,8 @@ header {
       margin-bottom: 0;
       justify-content: flex-end;
     }
-    .k__navigation  {
-      &>li {
+    .k__navigation {
+      & > li {
         position: relative;
         .navigation__right_dorp__menu {
           min-width: 21.5rem;
@@ -273,6 +274,9 @@ header {
       margin-right: 2rem;
       &.grid {
         margin-top: 2px;
+        @include media($default) {
+          margin-right: 0;
+        }
       }
       &.search {
         a {
@@ -294,7 +298,7 @@ header {
 }
 .k__mega__menu {
   display: flex;
-  &>ul {
+  & > ul {
     width: 40%;
   }
   .mega__menu__image {
@@ -319,21 +323,21 @@ header {
   z-index: 999;
   i {
     font-size: 1.6rem;
-    margin-bottom: .1rem;
+    margin-bottom: 0.1rem;
   }
   @include media($default) {
     display: none;
   }
 }
 .navigation__right_dorp__menu {
-  padding: 3rem 2rem 2rem;  
+  padding: 3rem 2rem 2rem;
   background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   input {
     min-width: 17.5rem;
     min-height: 3.2rem;
     font-size: 1.3rem;
-    padding-right:3rem ;
+    padding-right: 3rem;
   }
   .navigationd__content__group {
     position: relative;
@@ -345,7 +349,7 @@ header {
     ul {
       padding: 1rem;
       a {
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
       }
     }
   }
