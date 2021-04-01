@@ -19,3 +19,6 @@ header.transparent + .main__wrapper {
         margin-top: 0rem;
     }
 }
+.lookbook-header+.main__wrapper {
+    margin-bottom: 0;
+}

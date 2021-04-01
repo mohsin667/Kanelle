@@ -1,0 +1,71 @@
+.lb-main {
+    padding: 6.5rem 0 6rem;
+    .container {
+        max-width: 100%;
+        padding: 0 4%;
+        @include media($medium){
+            padding: 0 3%;
+        }
+        @include media($default){
+            padding: 0 4%;
+        }
+        .row {
+            margin: 0 -15px;
+            @include media($large){
+                margin: 0 -30px;
+            }
+            .lb-layout {
+                padding: 0 15px;
+                margin-bottom: 30px;
+                @include media($large){
+                    margin-bottom: 60px;
+                    padding: 0 30px;
+                }
+                &__card {
+                    position: relative;
+                    .card-text {
+                        position: absolute;
+                        top: 69.5%;
+                        color: white;
+                        left: 37.6%;
+                        @include media($medium){
+                            left: 35%;
+                            top: 71%;
+                        }
+                        @include media($large){
+                            top: 75%;
+                        }
+                        @include media($xlarge){
+                            top: 76%;
+                        }
+                        @include media(1550px){
+                            top: 79.9%;
+                        }
+                        h3 {
+                            font-size: 1.8rem;
+                            text-transform: uppercase;
+                            padding: 0; 
+                            @include media($large){
+                                font-size: 2.2rem;
+                            }
+                            @include media($xlarge){
+                                font-size: 3.2rem;
+                            }
+                        }
+                        p {
+                            font-size: 1.6rem;
+                            padding-top: .5rem;
+                            @include media($large){
+                                padding-top: 0;
+                                font-size: 1.6rem;
+                            }
+                            @include media($xlarge){
+                                font-size: 2.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
