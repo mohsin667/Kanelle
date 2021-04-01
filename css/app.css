@@ -9364,6 +9364,9 @@ template {
   header.transparent + .main__wrapper {
     margin-top: 0rem; } }
 
+.lookbook-header + .main__wrapper {
+  margin-bottom: 0; }
+
 .flex {
   display: flex;
   flex-flow: column; }
@@ -10447,5 +10450,159 @@ footer {
     background: #fff;
     text-align: center;
     max-width: 16.3rem; }
+
+.lb-main {
+  padding: 6.5rem 0 6rem; }
+  .lb-main .container {
+    max-width: 100%;
+    padding: 0 4%; }
+    @media screen and (min-width: 768px) {
+      .lb-main .container {
+        padding: 0 3%; } }
+    @media screen and (min-width: 992px) {
+      .lb-main .container {
+        padding: 0 4%; } }
+    .lb-main .container .row {
+      margin: 0 -15px; }
+      @media screen and (min-width: 1200px) {
+        .lb-main .container .row {
+          margin: 0 -30px; } }
+      .lb-main .container .row .lb-layout {
+        padding: 0 15px;
+        margin-bottom: 30px; }
+        @media screen and (min-width: 1200px) {
+          .lb-main .container .row .lb-layout {
+            margin-bottom: 60px;
+            padding: 0 30px; } }
+        .lb-main .container .row .lb-layout__card {
+          position: relative; }
+          .lb-main .container .row .lb-layout__card .card-text {
+            position: absolute;
+            top: 69.5%;
+            color: white;
+            left: 37.6%; }
+            @media screen and (min-width: 768px) {
+              .lb-main .container .row .lb-layout__card .card-text {
+                left: 35%;
+                top: 71%; } }
+            @media screen and (min-width: 1200px) {
+              .lb-main .container .row .lb-layout__card .card-text {
+                top: 75%; } }
+            @media screen and (min-width: 1400px) {
+              .lb-main .container .row .lb-layout__card .card-text {
+                top: 76%; } }
+            @media screen and (min-width: 1550px) {
+              .lb-main .container .row .lb-layout__card .card-text {
+                top: 79.9%; } }
+            .lb-main .container .row .lb-layout__card .card-text h3 {
+              font-size: 1.8rem;
+              text-transform: uppercase;
+              padding: 0; }
+              @media screen and (min-width: 1200px) {
+                .lb-main .container .row .lb-layout__card .card-text h3 {
+                  font-size: 2.2rem; } }
+              @media screen and (min-width: 1400px) {
+                .lb-main .container .row .lb-layout__card .card-text h3 {
+                  font-size: 3.2rem; } }
+            .lb-main .container .row .lb-layout__card .card-text p {
+              font-size: 1.6rem;
+              padding-top: .5rem; }
+              @media screen and (min-width: 1200px) {
+                .lb-main .container .row .lb-layout__card .card-text p {
+                  padding-top: 0;
+                  font-size: 1.6rem; } }
+              @media screen and (min-width: 1400px) {
+                .lb-main .container .row .lb-layout__card .card-text p {
+                  font-size: 2.4rem; } }
+
+.gift-page h1 {
+  padding-top: 7rem; }
+.gift-page .container-fluid {
+  padding: 0 1.5rem; }
+  @media screen and (min-width: 992px) {
+    .gift-page .container-fluid {
+      padding: 0; } }
+
+@media screen and (min-width: 992px) {
+  .site__gift__wrapper .gift__details__wrapper {
+    padding-left: 8rem;
+    padding-top: 8rem;
+    height: 100%; } }
+.site__gift__wrapper .gift__details__wrapper h3 {
+  font-size: 2.8rem;
+  color: #000;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 3rem; }
+  .site__gift__wrapper .gift__details__wrapper h3::after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #f1dedb;
+    height: 6px;
+    width: 100%;
+    top: auto;
+    bottom: -1rem; }
+.site__gift__wrapper .gift__details__wrapper h4 {
+  display: block;
+  font-size: 2.4rem;
+  font-family: "panton-regular", sans-serif; }
+
+.card__price__detail .btn-group {
+  border: 0;
+  border: 2px solid #bababa; }
+  .card__price__detail .btn-group .btn {
+    font-size: 1.4rem;
+    font-weight: bold; }
+    .card__price__detail .btn-group .btn:first-child {
+      font-size: 1.6rem; }
+    .card__price__detail .btn-group .btn:last-child {
+      font-size: 1.6rem; }
+    .card__price__detail .btn-group .btn:nth-child(2) {
+      border-left: 2px solid #bababa;
+      border-right: 2px solid #bababa;
+      padding: 0 2rem; }
+.card__price__detail .add-row span {
+  display: block;
+  margin: .5rem 0; }
+.card__price__detail .add__bag__row {
+  padding: 1rem 0 6rem; }
+  .card__price__detail .add__bag__row .add__btn {
+    outline: none;
+    border: none;
+    background: #b85a4d;
+    max-width: 300px;
+    height: 4.2rem;
+    color: #f4f7f6;
+    padding: 0 4rem; }
+    @media screen and (min-width: 992px) {
+      .card__price__detail .add__bag__row .add__btn {
+        padding: 0 10.8rem; } }
+  .card__price__detail .add__bag__row a {
+    margin-left: 1.5rem; }
+    .card__price__detail .add__bag__row a i {
+      font-size: 2rem;
+      color: #666666; }
+
+.tnc__wrapper h5 {
+  font-size: 1.4rem;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 3rem; }
+  .tnc__wrapper h5:after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #cccccc;
+    height: 3px;
+    width: 100%;
+    top: auto;
+    bottom: -.3rem; }
+.tnc__wrapper p {
+  font-size: 1.3rem; }
 
 /*# sourceMappingURL=app.css.map */
